@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pre-Surgery Food and Activity Guide</title>
+<style>
+body{font-family:Arial,"Noto Sans Devanagari",sans-serif;margin:0;background:#f5f7f6;color:#1d2a22;line-height:1.55}
+header{background:#176b4d;color:#fff;padding:28px 18px}
+.container{max-width:1000px;margin:auto;padding:0 16px}
+.top{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}
+button{border:none;padding:10px 16px;border-radius:24px;font-weight:700;cursor:pointer}
+button.active{background:#fff;color:#176b4d}
+button:not(.active){background:#d8efe5;color:#176b4d}
+main{padding:22px 0 40px}
+section{background:#fff;border-radius:16px;padding:20px;margin:16px 0;box-shadow:0 5px 20px rgba(0,0,0,.06)}
+h1,h2,h3{margin-top:0}
+h2{color:#176b4d}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{border:1px solid #dce7e0;border-radius:12px;padding:14px;background:#fbfdfc}
+.good{border-left:5px solid #176b4d}
+.bad{border-left:5px solid #b3261e}
+.warn{background:#fff4df;border:1px solid #f0cf97;border-radius:12px;padding:14px}
+.danger{background:#fdeaea;border:1px solid #efb3b3;border-radius:12px;padding:14px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:10px;border-bottom:1px solid #e1e7e3;text-align:left;vertical-align:top}
+th{background:#e8f4ee}
+ul{padding-left:22px}
+li{margin:6px 0}
+.small{font-size:.92rem;color:#5d6a62}
+[data-lang="hi"]{display:none}
+@media(max-width:720px){.grid{grid-template-columns:1fr}section{padding:16px}th,td{font-size:.92rem;padding:8px}}
+</style>
+<noscript><style>[data-lang="hi"]{display:block!important}</style></noscript>
+</head>
+<body>
+<header>
+  <div class="container top">
+    <div>
+      <div data-lang="en">
+        <h1>Pre-Surgery Food and Activity Guide</h1>
+        <p>For a person preparing for gallbladder or bile-duct surgery.</p>
+      </div>
+      <div data-lang="hi">
+        <h1>सर्जरी से पहले भोजन और गतिविधि मार्गदर्शिका</h1>
+        <p>पित्ताशय या पित्त नली की सर्जरी की तैयारी कर रहे व्यक्ति के लिए।</p>
+      </div>
+    </div>
+    <div>
+      <button id="enBtn" class="active" onclick="setLang('en')">English</button>
+      <button id="hiBtn" onclick="setLang('hi')">हिंदी</button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+<section class="warn">
+<div data-lang="en">
+<strong>Important:</strong> This guide supports nutrition and fitness before surgery. It does not treat jaundice, bile-duct blockage, infection, or a suspected tumour. Follow the treating doctor’s instructions.
+</div>
+<div data-lang="hi">
+<strong>महत्वपूर्ण:</strong> यह मार्गदर्शिका सर्जरी से पहले पोषण और ताकत बनाए रखने में मदद करती है। यह पीलिया, पित्त नली की रुकावट, संक्रमण या संदिग्ध गांठ का इलाज नहीं है। इलाज करने वाले डॉक्टर की सलाह को प्राथमिकता दें।
+</div>
+</section>
+
+<section>
+<div data-lang="en">
+<h2>Daily food routine</h2>
+<ul>
+<li>Eat 5 to 6 small meals instead of 2 or 3 heavy meals.</li>
+<li>Include protein in every meal or snack.</li>
+<li>Do not fast or try to lose weight before surgery.</li>
+<li>Prefer steamed, boiled, grilled, baked, or lightly cooked food.</li>
+<li>Drink water regularly unless the doctor has restricted fluids.</li>
+<li>Keep meals lower in fat if oily food causes pain, nausea, bloating, or loose stools.</li>
+</ul>
+<table>
+<tr><th>Time</th><th>Suggested foods</th></tr>
+<tr><td>Morning</td><td>Oats, poha, upma, idli, dal chilla with curd, tofu, or 1 to 2 eggs</td></tr>
+<tr><td>Mid-morning</td><td>Banana, papaya, apple, guava, yogurt, milk, or approved nutrition drink</td></tr>
+<tr><td>Lunch</td><td>Rice or roti, dal, cooked vegetables, curd, tofu, low-fat paneer, or eggs</td></tr>
+<tr><td>Evening snack</td><td>Roasted chana, yogurt, dhokla, idli, fruit, milk, or a small sandwich</td></tr>
+<tr><td>Dinner</td><td>Moong dal khichdi, soft rice and dal, vegetable soup with tofu, or roti with cooked vegetables</td></tr>
+<tr><td>Before bed</td><td>Milk or yogurt if tolerated</td></tr>
+</table>
+</div>
+
+<div data-lang="hi">
+<h2>रोजाना भोजन की दिनचर्या</h2>
+<ul>
+<li>2 या 3 भारी भोजन की जगह 5 से 6 छोटे भोजन लें।</li>
+<li>हर भोजन या स्नैक में प्रोटीन का एक स्रोत रखें।</li>
+<li>सर्जरी से पहले उपवास न करें और वजन घटाने की कोशिश न करें।</li>
+<li>भाप में पका, उबला, ग्रिल किया हुआ, बेक किया हुआ या बहुत कम तेल में बना भोजन लें।</li>
+<li>यदि डॉक्टर ने पानी सीमित नहीं किया है तो नियमित रूप से पानी पिएं।</li>
+<li>यदि तेल वाला भोजन दर्द, मतली, पेट फूलना या दस्त बढ़ाए तो कम वसा वाला भोजन लें।</li>
+</ul>
+<table>
+<tr><th>समय</th><th>भोजन के विकल्प</th></tr>
+<tr><td>सुबह</td><td>ओट्स, पोहा, उपमा, इडली या दाल चीला, साथ में दही, टोफू या 1 से 2 अंडे</td></tr>
+<tr><td>सुबह के बीच</td><td>केला, पपीता, सेब, अमरूद, दही, दूध या डॉक्टर द्वारा स्वीकृत पोषण पेय</td></tr>
+<tr><td>दोपहर</td><td>चावल या रोटी, दाल, पकी सब्जी, दही, टोफू, कम वसा वाला पनीर या अंडे</td></tr>
+<tr><td>शाम का नाश्ता</td><td>भुना चना, दही, ढोकला, इडली, फल, दूध या छोटा सैंडविच</td></tr>
+<tr><td>रात</td><td>मूंग दाल खिचड़ी, नरम चावल-दाल, टोफू वाली सब्जी का सूप या रोटी के साथ पकी सब्जी</td></tr>
+<tr><td>सोने से पहले</td><td>यदि सहन हो तो दूध या दही</td></tr>
+</table>
+</div>
+</section>
+
+<section>
+<div data-lang="en">
+<h2>Foods to eat</h2>
+<div class="grid">
+<div class="card good">
+<h3>Protein sources</h3>
+<ul>
+<li>Eggs, boiled, poached, or cooked with very little oil</li>
+<li>Moong, masoor, arhar, and chana dal</li>
+<li>Tofu and soy products</li>
+<li>Low-fat paneer</li>
+<li>Curd, Greek yogurt, and milk</li>
+<li>Well-cooked beans or chickpeas if tolerated</li>
+<li>Doctor-approved protein or nutrition drink if appetite is poor</li>
+</ul>
+</div>
+<div class="card good">
+<h3>Energy foods</h3>
+<ul>
+<li>Rice, roti, oats, daliya</li>
+<li>Potato and sweet potato</li>
+<li>Poha, upma, idli, dhokla</li>
+<li>Banana and other tolerated fruits</li>
+<li>Khichdi and soft rice-dal meals</li>
+</ul>
+</div>
+<div class="card good">
+<h3>Vegetables and fruits</h3>
+<ul>
+<li>Cooked carrots, pumpkin, bottle gourd, ridge gourd, beans, and spinach</li>
+<li>Papaya, apple, banana, orange, guava, and pear</li>
+<li>Use peeled or cooked produce if digestion is sensitive</li>
+</ul>
+</div>
+<div class="card good">
+<h3>Fluids</h3>
+<ul>
+<li>Water</li>
+<li>Soup</li>
+<li>Milk or lassi if tolerated</li>
+<li>Oral rehydration solution during vomiting or diarrhea after medical advice</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div data-lang="hi">
+<h2>खाने योग्य भोजन</h2>
+<div class="grid">
+<div class="card good">
+<h3>प्रोटीन के स्रोत</h3>
+<ul>
+<li>उबला या पोच किया हुआ अंडा, या बहुत कम तेल में बना अंडा</li>
+<li>मूंग, मसूर, अरहर और चना दाल</li>
+<li>टोफू और सोया उत्पाद</li>
+<li>कम वसा वाला पनीर</li>
+<li>दही, ग्रीक योगर्ट और दूध</li>
+<li>अच्छी तरह पके राजमा या छोले, यदि सहन हों</li>
+<li>भूख कम होने पर डॉक्टर द्वारा स्वीकृत प्रोटीन या पोषण पेय</li>
+</ul>
+</div>
+<div class="card good">
+<h3>ऊर्जा देने वाले भोजन</h3>
+<ul>
+<li>चावल, रोटी, ओट्स और दलिया</li>
+<li>आलू और शकरकंद</li>
+<li>पोहा, उपमा, इडली और ढोकला</li>
+<li>केला और अन्य सहन होने वाले फल</li>
+<li>खिचड़ी और नरम चावल-दाल</li>
+</ul>
+</div>
+<div class="card good">
+<h3>सब्जियां और फल</h3>
+<ul>
+<li>पकी गाजर, कद्दू, लौकी, तोरई, बीन्स और पालक</li>
+<li>पपीता, सेब, केला, संतरा, अमरूद और नाशपाती</li>
+<li>पाचन कमजोर हो तो छिले या पके फल-सब्जियां लें</li>
+</ul>
+</div>
+<div class="card good">
+<h3>तरल पदार्थ</h3>
+<ul>
+<li>पानी</li>
+<li>सूप</li>
+<li>यदि सहन हो तो दूध या लस्सी</li>
+<li>उल्टी या दस्त में डॉक्टर की सलाह से ओआरएस</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div data-lang="en">
+<h2>Foods and substances to avoid</h2>
+<div class="grid">
+<div class="card bad">
+<h3>Avoid completely</h3>
+<ul>
+<li>Alcohol</li>
+<li>Smoking, tobacco, gutka, and vaping</li>
+<li>Herbal cancer cures, detox teas, unknown powders, or unprescribed supplements</li>
+<li>Raw or undercooked eggs</li>
+<li>Unpasteurized milk or dairy products</li>
+<li>Stale, spoiled, or unhygienically stored food</li>
+<li>Crash diets, fasting, and juice-only diets</li>
+</ul>
+</div>
+<div class="card bad">
+<h3>Strongly limit</h3>
+<ul>
+<li>Deep-fried food such as samosa, pakora, puri, and bhatura</li>
+<li>Large amounts of ghee, butter, cream, mayonnaise, and cheese</li>
+<li>Heavy restaurant gravies and fast food</li>
+<li>Very spicy food if it worsens symptoms</li>
+<li>Large portions of nuts and seeds if fat causes discomfort</li>
+<li>Sugary drinks and packaged snacks instead of proper meals</li>
+</ul>
+</div>
+</div>
+<p class="small"><strong>Medicines and supplements:</strong> Do not stop prescribed medicines on your own. Tell the surgical team about blood thinners, diabetes medicines, fish oil, vitamin E, turmeric or curcumin capsules, garlic capsules, ginseng, and all herbal products.</p>
+</div>
+
+<div data-lang="hi">
+<h2>किन खाद्य पदार्थों और चीजों से बचें</h2>
+<div class="grid">
+<div class="card bad">
+<h3>पूरी तरह बचें</h3>
+<ul>
+<li>शराब</li>
+<li>धूम्रपान, तंबाकू, गुटखा और वेपिंग</li>
+<li>कैंसर ठीक करने का दावा करने वाली जड़ी-बूटी, डिटॉक्स चाय, अज्ञात पाउडर या बिना सलाह के सप्लीमेंट</li>
+<li>कच्चा या अधपका अंडा</li>
+<li>बिना पाश्चुरीकृत दूध या डेयरी उत्पाद</li>
+<li>बासी, खराब या अस्वच्छ तरीके से रखा भोजन</li>
+<li>क्रैश डाइट, उपवास और केवल जूस वाली डाइट</li>
+</ul>
+</div>
+<div class="card bad">
+<h3>बहुत कम लें</h3>
+<ul>
+<li>समोसा, पकौड़ा, पूरी और भटूरा जैसे तले हुए भोजन</li>
+<li>बहुत अधिक घी, मक्खन, क्रीम, मेयोनेज़ और चीज़</li>
+<li>भारी रेस्टोरेंट ग्रेवी और फास्ट फूड</li>
+<li>यदि लक्षण बढ़ें तो बहुत मसालेदार भोजन</li>
+<li>यदि वसा से परेशानी हो तो मेवे और बीज कम मात्रा में लें</li>
+<li>सही भोजन की जगह मीठे पेय और पैकेट वाले स्नैक्स न लें</li>
+</ul>
+</div>
+</div>
+<p class="small"><strong>दवाएं और सप्लीमेंट:</strong> डॉक्टर की लिखी दवाएं अपने आप बंद न करें। सर्जरी टीम को खून पतला करने वाली दवा, मधुमेह की दवा, फिश ऑयल, विटामिन ई, हल्दी या करक्यूमिन कैप्सूल, लहसुन कैप्सूल, जिनसेंग और सभी हर्बल उत्पादों की जानकारी दें।</p>
+</div>
+</section>
+
+<section>
+<div data-lang="en">
+<h2>Iron, vitamins, and important nutrients</h2>
+<table>
+<tr><th>Nutrient</th><th>Food sources</th><th>Important note</th></tr>
+<tr><td><strong>Iron</strong></td><td>Dal, chickpeas, beans, tofu, spinach, sesame seeds, pumpkin seeds, fortified cereal, eggs</td><td>Combine plant iron with lemon, orange, guava, amla, tomato, or capsicum. Keep tea and coffee 1 to 2 hours away.</td></tr>
+<tr><td><strong>Protein</strong></td><td>Eggs, dal, tofu, soy, curd, Greek yogurt, milk, low-fat paneer, beans</td><td>The surgeon or dietitian should personalize the amount.</td></tr>
+<tr><td><strong>Vitamin C</strong></td><td>Guava, amla, orange, lemon, tomato, capsicum, papaya</td><td>Helps absorb plant-based iron.</td></tr>
+<tr><td><strong>Folate</strong></td><td>Spinach, lentils, chickpeas, peas, broccoli, fortified cereals</td><td>Do not start high-dose tablets without medical advice.</td></tr>
+<tr><td><strong>Vitamin B12</strong></td><td>Eggs, milk, yogurt, paneer, fortified foods</td><td>A supplement may be needed if the blood level is low.</td></tr>
+<tr><td><strong>Vitamin D and calcium</strong></td><td>Fortified milk, yogurt, paneer, eggs</td><td>Use supplements only in the dose advised by the doctor.</td></tr>
+</table>
+<div class="warn" style="margin-top:14px"><strong>Anemia may not improve with food alone.</strong> Ask the doctor about ferritin, iron studies, vitamin B12, and folate. Iron tablets or intravenous iron may be needed before surgery.</div>
+</div>
+
+<div data-lang="hi">
+<h2>आयरन, विटामिन और जरूरी पोषक तत्व</h2>
+<table>
+<tr><th>पोषक तत्व</th><th>भोजन के स्रोत</th><th>महत्वपूर्ण बात</th></tr>
+<tr><td><strong>आयरन</strong></td><td>दाल, चना, राजमा, टोफू, पालक, तिल, कद्दू के बीज, फोर्टिफाइड अनाज और अंडे</td><td>पौधों से मिलने वाले आयरन के साथ नींबू, संतरा, अमरूद, आंवला, टमाटर या शिमला मिर्च लें। चाय-कॉफी को 1 से 2 घंटे दूर रखें।</td></tr>
+<tr><td><strong>प्रोटीन</strong></td><td>अंडे, दाल, टोफू, सोया, दही, ग्रीक योगर्ट, दूध, कम वसा वाला पनीर और बीन्स</td><td>मात्रा सर्जन या डाइटिशियन से तय कराएं।</td></tr>
+<tr><td><strong>विटामिन C</strong></td><td>अमरूद, आंवला, संतरा, नींबू, टमाटर, शिमला मिर्च और पपीता</td><td>आयरन के अवशोषण में मदद करता है।</td></tr>
+<tr><td><strong>फोलेट</strong></td><td>पालक, मसूर, चना, मटर, ब्रोकली और फोर्टिफाइड अनाज</td><td>डॉक्टर की सलाह के बिना अधिक मात्रा वाली गोली शुरू न करें।</td></tr>
+<tr><td><strong>विटामिन B12</strong></td><td>अंडे, दूध, दही, पनीर और फोर्टिफाइड भोजन</td><td>कमी होने पर सप्लीमेंट की जरूरत पड़ सकती है।</td></tr>
+<tr><td><strong>विटामिन D और कैल्शियम</strong></td><td>फोर्टिफाइड दूध, दही, पनीर और अंडे</td><td>डॉक्टर द्वारा बताई गई मात्रा में ही सप्लीमेंट लें।</td></tr>
+</table>
+<div class="warn" style="margin-top:14px"><strong>खून की कमी केवल भोजन से हमेशा ठीक नहीं होती।</strong> डॉक्टर से फेरिटिन, आयरन स्टडी, विटामिन B12 और फोलेट की जांच के बारे में पूछें। सर्जरी से पहले आयरन की गोली या नस से आयरन देने की जरूरत पड़ सकती है।</div>
+</div>
+</section>
+
+<section>
+<div data-lang="en">
+<h2>Activity before surgery</h2>
+<ul>
+<li>Walk gently for 10 to 30 minutes on most days, depending on strength.</li>
+<li>If tired, split this into two or three short walks.</li>
+<li>Practice slow deep breathing for 5 minutes, 2 to 3 times daily.</li>
+<li>Get up and move regularly instead of staying in bed all day.</li>
+<li>Sleep 7 to 9 hours and keep a regular sleep schedule.</li>
+<li>Avoid heavy weightlifting and high-intensity exercise.</li>
+</ul>
+</div>
+<div data-lang="hi">
+<h2>सर्जरी से पहले गतिविधि</h2>
+<ul>
+<li>शक्ति के अनुसार अधिकतर दिनों में 10 से 30 मिनट हल्की चाल से चलें।</li>
+<li>थकान होने पर इसे दो या तीन छोटी सैर में बांट लें।</li>
+<li>दिन में 2 से 3 बार, 5 मिनट तक धीरे-धीरे गहरी सांस लेने का अभ्यास करें।</li>
+<li>पूरा दिन बिस्तर पर रहने की जगह नियमित रूप से उठें और थोड़ा चलें।</li>
+<li>7 से 9 घंटे सोएं और सोने का समय नियमित रखें।</li>
+<li>भारी वजन उठाने और बहुत तेज व्यायाम से बचें।</li>
+</ul>
+</div>
+</section>
+
+<section class="danger">
+<div data-lang="en">
+<h2 style="color:#a32222">Seek urgent medical care</h2>
+<ul>
+<li>Fever or chills, especially with jaundice or upper-right abdominal pain</li>
+<li>Rapidly worsening yellow eyes or skin</li>
+<li>Confusion, unusual sleepiness, fainting, or severe weakness</li>
+<li>Repeated vomiting or inability to keep fluids down</li>
+<li>Severe or increasing abdominal pain</li>
+<li>Very dark urine with pale or clay-colored stools</li>
+<li>Bleeding, black stools, vomiting blood, or unusual bruising</li>
+<li>Very low urine output or dehydration</li>
+</ul>
+<p><strong>Fever, jaundice, and abdominal pain together may indicate infection behind a blocked bile duct and should not wait for a routine appointment.</strong></p>
+</div>
+
+<div data-lang="hi">
+<h2 style="color:#a32222">तुरंत चिकित्सा सहायता लें</h2>
+<ul>
+<li>बुखार या ठंड लगना, विशेषकर पीलिया या पेट के दाहिने ऊपरी हिस्से में दर्द के साथ</li>
+<li>आंखों या त्वचा का पीलापन तेजी से बढ़ना</li>
+<li>भ्रम, असामान्य नींद, बेहोशी या बहुत अधिक कमजोरी</li>
+<li>बार-बार उल्टी या पानी भी न रुकना</li>
+<li>तेज या लगातार बढ़ता पेट दर्द</li>
+<li>बहुत गहरा पेशाब और बहुत हल्का या मिट्टी जैसा मल</li>
+<li>खून आना, काला मल, खून की उल्टी या बिना कारण आसानी से नीला पड़ना</li>
+<li>पेशाब बहुत कम होना या शरीर में पानी की कमी</li>
+</ul>
+<p><strong>बुखार, पीलिया और पेट दर्द एक साथ होना बंद पित्त नली के पीछे संक्रमण का संकेत हो सकता है। ऐसी स्थिति में सामान्य अपॉइंटमेंट का इंतजार न करें।</strong></p>
+</div>
+</section>
+
+<section>
+<div data-lang="en">
+<h2>Questions for the surgical team</h2>
+<ul>
+<li>Does the bile duct need drainage or a stent before surgery?</li>
+<li>Should a hospital dietitian assess weight loss and protein intake?</li>
+<li>Does the anemia require iron tablets, intravenous iron, or more testing?</li>
+<li>Which medicines and supplements should be stopped before surgery?</li>
+<li>What fasting instructions apply before surgery?</li>
+</ul>
+<p class="small">This page is educational and does not replace medical care.</p>
+</div>
+
+<div data-lang="hi">
+<h2>सर्जरी टीम से पूछने वाले प्रश्न</h2>
+<ul>
+<li>क्या सर्जरी से पहले पित्त नली की ड्रेनेज या स्टेंट की जरूरत है?</li>
+<li>क्या अस्पताल के डाइटिशियन को वजन घटने और प्रोटीन की मात्रा का आकलन करना चाहिए?</li>
+<li>क्या खून की कमी के लिए आयरन की गोली, नस से आयरन या अधिक जांच की जरूरत है?</li>
+<li>सर्जरी से पहले कौन-सी दवाएं और सप्लीमेंट बंद करने हैं?</li>
+<li>सर्जरी से पहले उपवास के क्या निर्देश हैं?</li>
+</ul>
+<p class="small">यह पेज केवल जानकारी के लिए है और डॉक्टर के इलाज का विकल्प नहीं है।</p>
+</div>
+</section>
+
+</main>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll('[data-lang]').forEach(el=>{
+    el.style.display = el.getAttribute('data-lang')===lang ? 'block' : 'none';
+  });
+  document.getElementById('enBtn').classList.toggle('active',lang==='en');
+  document.getElementById('hiBtn').classList.toggle('active',lang==='hi');
+  document.documentElement.lang=lang;
+  localStorage.setItem('lang',lang);
+}
+setLang(localStorage.getItem('lang')==='hi'?'hi':'en');
+</script>
+</body>
+</html>
